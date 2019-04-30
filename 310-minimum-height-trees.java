@@ -23,13 +23,13 @@ class Solution {
             adj.get(edge[1]).add(edge[0]);
         }
         
-        System.out.println(adj);
+        //System.out.println(adj);
         
         for (int i=0; i<n; i++) {
             if (adj.get(i).size() == 1) leaves.add(i);
         }
         
-        System.out.println(leaves);
+        //System.out.println(leaves);
         
         while (n > 2) {
             n = n - leaves.size();
