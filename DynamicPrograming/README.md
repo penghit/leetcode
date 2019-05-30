@@ -20,3 +20,12 @@ the stock at position i-1 is higher than selling at i, we will keep the decision
 the mind and sell at position i instead of i-1.
 
 buy2, sell1 and buy1 can be analysed the same way
+
+
+## Leetcode
+The idea is to keep a list of the minimum of coins needed to make up the amount from 1 to amount.
+
+Let's say we have three kind of coins[1, 2, 5] and the amount is 11, then ans[1] should be 1, since one 1 coin is enough. And
+ans[2] should be 1, since one 2 coin is enough. ans[3] should be min(ans[3-1]+1, ans[3-2]+1, ans[3-5]+1) (if the value exists), 
+the meaning is that we should consider wether the one or more of the previous amount plus one of the coins can make up 3. If there
+are multiple, we choose the smallest one.
