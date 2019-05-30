@@ -22,7 +22,7 @@ the mind and sell at position i instead of i-1.
 buy2, sell1 and buy1 can be analysed the same way
 
 
-## Leetcode
+## Leetcode 322
 The idea is to keep a list of the minimum of coins needed to make up the amount from 1 to amount.
 
 Let's say we have three kind of coins[1, 2, 5] and the amount is 11, then ans[1] should be 1, since one 1 coin is enough. And
